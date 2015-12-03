@@ -1,4 +1,4 @@
-# print-object
+# print-object [![Build Status](https://travis-ci.org/radiovisual/print-object.svg)](https://travis-ci.org/radiovisual/print-object)
 Pretty-print an object's keys and values to a string
 
 Supports the printing of embedded objects and arrays. 
@@ -27,6 +27,10 @@ four:
     b: 2
 five: six,seven
 ```
+
+## License 
+
+MIT @ [Michael Wuergler](http://numetriclabs.com)
 
 
  
