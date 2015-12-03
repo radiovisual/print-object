@@ -1,0 +1,31 @@
+{
+  "name": "print-object",
+  "version": "1.0.0",
+  "description": "Pretty-print an object's keys and values to a string.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radiovisual/print-object.git"
+  },
+  "keywords": [
+    "pretty-print",
+    "print",
+    "object",
+    "iterate",
+    "string",
+    "key",
+    "values"
+  ],
+  "author": "Michael Wuergler <senjudev@gmail.com> (http://numetriclabs.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/radiovisual/print-object/issues"
+  },
+  "homepage": "https://github.com/radiovisual/print-object#readme",
+  "dependencies": {
+    "ava": "^0.7.0"
+  }
+}
