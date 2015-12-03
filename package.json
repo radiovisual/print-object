@@ -1,6 +1,6 @@
 {
   "name": "print-object",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pretty-print an object's keys and values to a string.",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,7 @@
     "url": "https://github.com/radiovisual/print-object/issues"
   },
   "homepage": "https://github.com/radiovisual/print-object#readme",
-  "dependencies": {
+  "devDependencies": {
     "ava": "^0.7.0"
   }
 }
