@@ -26,6 +26,11 @@
   },
   "homepage": "https://github.com/radiovisual/print-object#readme",
   "devDependencies": {
-    "ava": "^0.7.0"
+    "ava": "^0.7.0",
+    "selective-whitespace": "0.0.1"
+  },
+  "dependencies": {
+    "es6-template-strings": "^2.0.0",
+    "object-assign": "^4.0.1"
   }
 }
