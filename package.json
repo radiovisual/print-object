@@ -1,6 +1,6 @@
 {
   "name": "print-object",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "Pretty-print an object's keys and values to a string.",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,8 @@
     "iterate",
     "string",
     "key",
-    "values"
+    "values",
+    "html"
   ],
   "author": "Michael Wuergler <senjudev@gmail.com> (http://numetriclabs.com)",
   "license": "MIT",
