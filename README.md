@@ -1,7 +1,9 @@
 # print-object [![Build Status](https://travis-ci.org/radiovisual/print-object.svg)](https://travis-ci.org/radiovisual/print-object)
-Pretty-print an object's keys and values to a string
+
+> Pretty-print an object's keys and values to a string or HTML.
 
 Supports the printing of embedded objects and arrays. 
+
 
 ## Installation
 ```
@@ -65,6 +67,39 @@ Output *(Formatting added for readability)*:
   </tr>
 </table>
 ```
+
+## API
+
+### printObject(object, [options])
+
+#### object
+
+- Type: `object`
+- The object you want to print
+- required
+
+#### options
+
+- Type: `object`
+- Pass options to the print function
+
+##### `html`
+  - Type: `Boolean`
+  - Prints to HTML
+  - default: `false`
+    
+##### `attr`
+- Type: `String`
+- The attribute string you want to assign to the html
+- Use this to pass your own id, class, style, data-, etc.
+    
+##### `class`
+- Type: `String`
+- Shortcut for adding your own class name to the top-level HTML element
+    
+    
+
+
 
 
 ## License 

@@ -37,16 +37,24 @@ test('should output html', t => {
 });
 
 test('can supply a custom class on html element', t => {
-    t.is(printObject(obj4, {html:true, class:'customClass'}), '<table class=\"customClass\"><tr><td>one</td><td>1</td></tr><tr><td>two</td><td>2</td></tr><tr><td>three</td><td>3</td></tr><tr><td>four</td><td>a: 1<br>b: 2<br></td></tr><tr><td>five</td><td>six,seven</td></tr></table>');
+    t.is(printObject(obj4, {html:true, class:'customClass'}), '<table class="customClass"><tr><td>one</td><td>1</td></tr><tr><td>two</td><td>2</td></tr><tr><td>three</td><td>3</td></tr><tr><td>four</td><td>a: 1<br>b: 2<br></td></tr><tr><td>five</td><td>six,seven</td></tr></table>');
 });
 
 test('can supply custom attributes on html element', t => {
-    t.is(printObject(obj4, {html:true, attr:'border="1"'}), '<table border=\"1\"><tr><td>one</td><td>1</td></tr><tr><td>two</td><td>2</td></tr><tr><td>three</td><td>3</td></tr><tr><td>four</td><td>a: 1<br>b: 2<br></td></tr><tr><td>five</td><td>six,seven</td></tr></table>');
+    t.is(printObject(obj4, {html:true, attr:'border="1"'}), '<table border="1"><tr><td>one</td><td>1</td></tr><tr><td>two</td><td>2</td></tr><tr><td>three</td><td>3</td></tr><tr><td>four</td><td>a: 1<br>b: 2<br></td></tr><tr><td>five</td><td>six,seven</td></tr></table>');
 });
 
 
 test('can supply custom attributes and custom class on html element', t => {
-    t.is(printObject(obj4, {html:true, attr:'border="1"', class:'customClass'}), '<table class="customClass" border=\"1\"><tr><td>one</td><td>1</td></tr><tr><td>two</td><td>2</td></tr><tr><td>three</td><td>3</td></tr><tr><td>four</td><td>a: 1<br>b: 2<br></td></tr><tr><td>five</td><td>six,seven</td></tr></table>');
+    t.is(printObject(obj4, {html:true, attr:'border="1"', class:'customClass'}), '<table class="customClass" border="1"><tr><td>one</td><td>1</td></tr><tr><td>two</td><td>2</td></tr><tr><td>three</td><td>3</td></tr><tr><td>four</td><td>a: 1<br>b: 2<br></td></tr><tr><td>five</td><td>six,seven</td></tr></table>');
+});
+
+test('can use the attr feature to assign a class', t => {
+    t.is(printObject(obj4, {html:true, attr:'class="customClass"' }), '<table class="customClass"><tr><td>one</td><td>1</td></tr><tr><td>two</td><td>2</td></tr><tr><td>three</td><td>3</td></tr><tr><td>four</td><td>a: 1<br>b: 2<br></td></tr><tr><td>five</td><td>six,seven</td></tr></table>');
+});
+
+test('can use the attr feature to assign an id and style', t => {
+    t.is(printObject(obj4, {html:true, attr:'id="myID" style="color:white"' }), '<table id="myID" style="color:white"><tr><td>one</td><td>1</td></tr><tr><td>two</td><td>2</td></tr><tr><td>three</td><td>3</td></tr><tr><td>four</td><td>a: 1<br>b: 2<br></td></tr><tr><td>five</td><td>six,seven</td></tr></table>');
 });
 
 
